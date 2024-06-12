@@ -4,7 +4,7 @@ import axios, { AxiosResponse } from 'axios';
 export async function getAllCloths() {
 	try {
 		const res: AxiosResponse = await axios.get(
-			'https://redwolf-3-git-main-siddhesh-salimaths-projects.vercel.app/'
+			'http://localhost:3000/api/products'
 		);
 		const product = await res.data;
 		return product;
