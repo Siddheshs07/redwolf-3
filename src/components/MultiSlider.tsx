@@ -32,7 +32,7 @@ const MultiSlider = ({
 				arrows={false}
 				className="mb-2"
 			>
-				{slides.map((e, i) => (
+				{slides.map((e: any, i: any) => (
 					<div key={i} className="flex flex-col justify-center items-center">
 						<Image
 							src={e?.url}
