@@ -1,19 +1,9 @@
-import Navbar from "./Navbar";
-import Footer from "./Footer";
-import Hero from "./Hero";
-import Press from "./Press";
-import SiteInfo from "./SiteInfo";
-import Featured from "./Featured";
-import MainBanner from "./MainBanner";
-import TopBanner from "./TopBanner";
+import Featured from './Featured';
+import Footer from './Footer';
+import Hero from './Hero';
+import MainBanner from './MainBanner';
+import Press from './Press';
+import SiteInfo from './SiteInfo';
+import TopBanner from './TopBanner';
 
-export {
-  Navbar,
-  Footer,
-  Hero,
-  MainBanner,
-  TopBanner,
-  Featured,
-  Press,
-  SiteInfo,
-};
+export { Featured, Footer, Hero, MainBanner, Press, SiteInfo, TopBanner };
