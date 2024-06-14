@@ -15,23 +15,23 @@ export async function getAllCloths() {
 
 export async function getMaleCloths() {
 	const product = await getAllCloths();
-	return product.filter((event: dataProps) => event.gender === 'M');
+	return product?.filter((event: dataProps) => event.gender === 'M');
 }
 export async function getFemaleCloths() {
 	const product = await getAllCloths();
-	return product.filter((event: dataProps) => event.gender === 'F');
+	return product?.filter((event: dataProps) => event.gender === 'F');
 }
 export async function filteredBySize() {
 	const product = await getAllCloths();
-	return product.filter((event: dataProps) => event.productSize);
+	return product?.filter((event: dataProps) => event.productSize);
 }
 export async function getBrands() {
 	const product = await getAllCloths();
-	return product.filter((event: dataProps) => event.brandName);
+	return product?.filter((event: dataProps) => event.brandName);
 }
 export async function getFeaturedProducts() {
 	const product = await getAllCloths();
-	return product.filter((event: dataProps) => event.isFeatured);
+	return product?.filter((event: dataProps) => event.isFeatured);
 }
 export async function getProductById(productId: string) {
 	const product = await getAllCloths();
